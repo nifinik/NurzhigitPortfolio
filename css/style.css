@@ -207,7 +207,7 @@ section {
 .home .content p {
   font-size: 24px;
   color: var(--green);
-  padding-bottom: 0.5rem;
+  padding-bottom: 16px;
 }
 
 .home .share {
@@ -724,4 +724,21 @@ section {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
+}
+
+.home-div {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (max-width: 550px) {
+  .home-div {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .home-div a {
+    display: inline-block;
+  }
 }
