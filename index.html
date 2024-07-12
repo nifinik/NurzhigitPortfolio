@@ -29,7 +29,6 @@
       <nav class="navbar">
         <a href="#home">Главная</a>
         <a href="#about">Обо мне</a>
-        <a href="#services">Сервисы</a>
         <a href="#portfolio">Портфолио</a>
         <a href="#contact">Контакты</a>
       </nav>
@@ -48,8 +47,13 @@
     <section class="home" id="home">
       <div class="content">
         <h3>Анатолий Нуржигит</h3>
-        <p>UX/UI дизайнер / Web разработчик</p>
-        <a href="#" class="btn">Скачать резюме</a>
+        <p class="who">UX/UI дизайнер / Web разработчик</p>
+        <a
+          href="documents/Резюме UX UI Designer веб разработчик.pdf"
+          download="Резюме UX UI Designer веб разработчик.pdf"
+          class="btn download-link"
+          >Скачать резюме</a
+        >
       </div>
 
       <div class="share">
@@ -95,8 +99,8 @@
               <p>Возраст: <span>23</span></p>
               <p>Гражданство: <span>Казахстан</span></p>
               <p>Место проживания: <span>Астана</span></p>
-              <p>Семейное положение: <span>Холост</span></p>
-              <p>Образование: <span>Высшее</span></p>
+              <p>Email: <span>Nurzhigit00a@gmail.com</span></p>
+              <p>Номер: <span>+7 (702)-756-60-57</span></p>
             </div>
             <a href="#" class="btn">Связь со мной</a>
           </div>
@@ -116,10 +120,14 @@
             <div class="bar bar-2-1"><span></span></div>
             <h3>CSS <span>80%</span></h3>
             <div class="bar bar-2-2"><span></span></div>
+            <h3>SASS/SCSS <span>60%</span></h3>
+            <div class="bar bar-2-4"><span></span></div>
             <h3>bootstrap <span>75%</span></h3>
             <div class="bar bar-2-3"><span></span></div>
-            <h3>javascript <span>60%</span></h3>
-            <div class="bar bar-2-4"><span></span></div>
+            <h3>javascript <span>50%</span></h3>
+            <div class="bar bar-1-2"><span></span></div>
+            <h3>gulp <span>50%</span></h3>
+            <div class="bar bar-1-2"><span></span></div>
           </div>
         </div>
       </div>
@@ -129,7 +137,7 @@
 
     <!-- services section starts  -->
 
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
       <h1 class="heading">my <span>services</span></h1>
 
       <div class="box-container">
@@ -178,55 +186,115 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- services section ends -->
 
     <!-- portfolio section starts  -->
 
     <section class="portfolio" id="portfolio">
-      <h1 class="heading">my <span>portfolio</span></h1>
+      <h1 class="heading">Мое <span>Портфолио</span></h1>
+      <div class="portfolio-tabbar">
+        <a href="#" class="btn tablink active" onclick="openTab(event, 'Tab1')"
+          >UX/UI дизайн</a
+        >
+        <a href="#" class="btn tablink" onclick="openTab(event, 'Tab2')"
+          >Фронтенд</a
+        >
+      </div>
 
-      <div class="box-container">
-        <div class="box">
-          <img src="image/img-1.jpg" alt="" />
-          <div class="content">
-            <h3>project 01</h3>
+      <div id="Tab1" class="box-container tabcontent" style="display: block">
+        <div class="tabcontent-grid">
+          <div
+            class="box"
+            onclick="showProductDetails('Товар 3.1', 'Описание товара 3.1', 'image/Thumbnails-1.png')"
+          >
+            <img src="image/Thumbnails-1.png" alt="" />
+            <div class="content">
+              <h3>project 01</h3>
+            </div>
+          </div>
+
+          <div
+            class="box"
+            onclick="showProductDetails('Товар 3.1', 'Описание товара 3.1', 'image/Thumbnails-2.png')"
+          >
+            <img src="image/Thumbnails-2.png" alt="" />
+            <div class="content">
+              <h3>project 02</h3>
+            </div>
+          </div>
+
+          <div
+            class="box"
+            onclick="showProductDetails('Товар 3.1', 'Описание товара 3.1', 'image/Thumbnails-3.png')"
+          >
+            <img src="image/Thumbnails-3.png" alt="" />
+            <div class="content">
+              <h3>project 03</h3>
+            </div>
+          </div>
+
+          <div
+            class="box"
+            onclick="showProductDetails('Товар 3.1', 'Описание товара 3.1', 'image/Thumbnails-4.png')"
+          >
+            <img src="image/Thumbnails-4.png" alt="" />
+            <div class="content">
+              <h3>project 04</h3>
+            </div>
+          </div>
+
+          <div
+            class="box"
+            onclick="showProductDetails('Товар 3.1', 'Описание товара 3.1', 'image/Thumbnails-5.png')"
+          >
+            <img src="image/Thumbnails-5.png" alt="" />
+            <div class="content">
+              <h3>project 05</h3>
+            </div>
+          </div>
+
+          <div
+            class="box"
+            onclick="showProductDetails('Товар 3.1', 'Описание товара 3.1', 'image/Thumbnails-6.png')"
+          >
+            <img src="image/Thumbnails-6.png" alt="" />
+            <div class="content">
+              <h3>project 06</h3>
+            </div>
+          </div>
+
+          <div
+            class="box"
+            onclick="showProductDetails('Товар 3.1', 'Описание товара 3.1', 'image/Thumbnails-7.png')"
+          >
+            <img src="image/Thumbnails-7.png" alt="" />
+            <div class="content">
+              <h3>project 07</h3>
+            </div>
           </div>
         </div>
-
-        <div class="box">
-          <img src="image/img-2.jpg" alt="" />
-          <div class="content">
-            <h3>project 02</h3>
+      </div>
+      <div id="Tab2" class="box-container tabcontent">
+        <div class="tabcontent-grid">
+          <div
+            class="box"
+            onclick="showProductDetails('Товар 3.1', 'Описание товара 3.1', 'image/img-6.jpg')"
+          >
+            <img src="image/img-6.jpg" alt="" />
+            <div class="content">
+              <h3>project 06</h3>
+            </div>
           </div>
-        </div>
-
-        <div class="box">
-          <img src="image/img-3.jpg" alt="" />
-          <div class="content">
-            <h3>project 03</h3>
-          </div>
-        </div>
-
-        <div class="box">
-          <img src="image/img-4.jpg" alt="" />
-          <div class="content">
-            <h3>project 04</h3>
-          </div>
-        </div>
-
-        <div class="box">
-          <img src="image/img-5.jpg" alt="" />
-          <div class="content">
-            <h3>project 05</h3>
-          </div>
-        </div>
-
-        <div class="box">
-          <img src="image/img-6.jpg" alt="" />
-          <div class="content">
-            <h3>project 06</h3>
+          <div
+            class="box"
+            onclick="showProductDetails('Товар 3.1', 'Описание товара 3.1', 'image/img-6.jpg')"
+          >
+            <img src="image/img-6.jpg" alt="" />
+            <div class="content">
+              <h3>project 06</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -234,10 +302,32 @@
 
     <!-- portfolio section ends -->
 
-    <!-- contact section starts -->
+    <div id="productDetailsModal" class="modal">
+      <div class="modal-content">
+        <div class="close" onclick="closeProductDetailsModal()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 1024 1024"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M799.855 166.312c.023.007.043.018.084.059l57.69 57.69c.041.041.052.06.059.084a.1.1 0 0 1 0 .069c-.007.023-.018.042-.059.083L569.926 512l287.703 287.703c.041.04.052.06.059.083a.12.12 0 0 1 0 .07c-.007.022-.018.042-.059.083l-57.69 57.69c-.041.041-.06.052-.084.059a.1.1 0 0 1-.069 0c-.023-.007-.042-.018-.083-.059L512 569.926L224.297 857.629c-.04.041-.06.052-.083.059a.12.12 0 0 1-.07 0c-.022-.007-.042-.018-.083-.059l-57.69-57.69c-.041-.041-.052-.06-.059-.084a.1.1 0 0 1 0-.069c.007-.023.018-.042.059-.083L454.073 512L166.371 224.297c-.041-.04-.052-.06-.059-.083a.12.12 0 0 1 0-.07c.007-.022.018-.042.059-.083l57.69-57.69c.041-.041.06-.052.084-.059a.1.1 0 0 1 .069 0c.023.007.042.018.083.059L512 454.073l287.703-287.702c.04-.041.06-.052.083-.059a.12.12 0 0 1 .07 0Z"
+            />
+          </svg>
+        </div>
+        <img id="productImg" src="" alt="" />
+        <h2 id="productTitle"></h2>
+        <p id="productDescription"></p>
+      </div>
+    </div>
 
+    <!-- contact section starts -->
+    <!-- 
     <section class="contact" id="contact">
-      <h1 class="heading"><span>contact</span> me</h1>
+      <h1 class="heading"><span>Связь</span> со мной</h1>
 
       <form action="">
         <input type="text" name="name" placeholder="your name" class="box" />
@@ -253,15 +343,17 @@
         ></textarea>
         <input type="submit" value="send message" class="btn" />
       </form>
-    </section>
+    </section> -->
 
     <!-- contact section ends -->
 
     <div class="credits">
-      created by <span>Anatoliy Nurzhigit</span> | all rights reserved
+      Создал <span>Анатолий Нуржигит</span> | все права защищены
     </div>
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
+    <script src="scripts/products.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
