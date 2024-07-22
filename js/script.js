@@ -49,16 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Функция для показа модального окна с деталями товара
-function showProductDetails(title, description, img) {
-  const modal = document.getElementById("productDetailsModal");
+function showProductDetails(img) {
+  var modal = document.getElementById("productDetailsModal");
   const productTitle = document.getElementById("productTitle");
   const productDescription = document.getElementById("productDescription");
   const productImg = document.getElementById("productImg");
-
-  productTitle.textContent = title;
-  productDescription.textContent = description;
+  // productTitle.textContent = title;
+  // productDescription.textContent = description;
   productImg.src = img;
-
   modal.style.display = "block";
 }
 
@@ -66,6 +64,17 @@ function showProductDetails(title, description, img) {
 function closeProductDetailsModal() {
   const modal = document.getElementById("productDetailsModal");
   modal.style.display = "none";
+}
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("modal")) {
+    closeModal();
+  }
+});
+
+function closeModal() {
+  var modal2 = document.getElementById("productDetailsModal");
+  modal2.style.display = "none";
 }
 
 // Функция для переключения вкладок
